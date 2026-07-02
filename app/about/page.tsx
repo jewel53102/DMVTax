@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ConsultBanner from "@/components/ConsultBanner";
+import JsonLd from "@/components/JsonLd";
+import { BUSINESS, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About — Stephen Cromwell, ESQ, CPA",
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "DMV Tax Resolution is led by Stephen Cromwell, an attorney and CPA serving Maryland, DC, and Virginia. Learn about our credentials, approach, and why local representation matters.",
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: BUSINESS.founder,
+  jobTitle: "Attorney & Certified Public Accountant",
+  description:
+    "Attorney, CPA, and NTPI Tax Fellow serving Maryland, DC, and Virginia clients with IRS and state tax resolution.",
+  url: `${SITE_URL}/about`,
+  image: `${SITE_URL}/stephen-cromwell.png`,
+  worksFor: {
+    "@type": "LegalService",
+    name: BUSINESS.name,
+  },
+  hasCredential: [
+    "Attorney (ESQ)",
+    "Certified Public Accountant (CPA)",
+    "NTPI Tax Fellow",
+    "AICPA Member",
+    "Certified Tax Resolution Specialist",
+  ],
+};
+
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={personJsonLd} />
       <section className="bg-[#1B2A4A] text-white py-16 px-4">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-10 items-center md:items-start">
           <div className="flex-shrink-0">

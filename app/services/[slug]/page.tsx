@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { services, getServiceBySlug } from "@/lib/services";
 import ConsultBanner from "@/components/ConsultBanner";
+import JsonLd from "@/components/JsonLd";
+import { BUSINESS, SITE_URL } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -29,8 +31,37 @@ export default async function ServicePage({ params }: Props) {
 
   const paragraphs = svc.body.split("\n\n");
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: svc.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  };
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: svc.shortTitle,
+    name: svc.title,
+    description: svc.description,
+    url: `${SITE_URL}/services/${svc.slug}`,
+    areaServed: BUSINESS.areaServed.map((name) => ({ "@type": "State", name })),
+    provider: {
+      "@type": "LegalService",
+      name: BUSINESS.name,
+    },
+  };
+
   return (
     <>
+      <JsonLd data={serviceJsonLd} />
+      {svc.faqs.length > 0 && <JsonLd data={faqJsonLd} />}
       <section className="relative overflow-hidden bg-[#1B2A4A] text-white py-16 px-4">
         <Image
           src="/capitol01.png"

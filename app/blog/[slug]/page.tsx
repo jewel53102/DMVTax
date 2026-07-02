@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import JsonLd from "@/components/JsonLd";
+import { BUSINESS, SITE_URL } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -26,8 +28,31 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    url: `${SITE_URL}/blog/${post.slug}`,
+    author: {
+      "@type": "Person",
+      name: BUSINESS.founder,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: BUSINESS.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/dmv-dome-white-1024.png`,
+      },
+    },
+  };
+
   return (
     <>
+      <JsonLd data={articleJsonLd} />
       <section className="bg-[#1B2A4A] text-white py-14 px-4">
         <div className="max-w-3xl mx-auto">
           <nav className="mb-6">

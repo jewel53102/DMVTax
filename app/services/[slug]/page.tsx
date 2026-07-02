@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { services, getServiceBySlug } from "@/lib/services";
 import ConsultBanner from "@/components/ConsultBanner";
 
@@ -30,8 +31,16 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <>
-      <section className="bg-[#1B2A4A] text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative overflow-hidden bg-[#1B2A4A] text-white py-16 px-4">
+        <Image
+          src="/capitol01.png"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-75"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B2A4A] via-[#1B2A4A]/90 to-[#1B2A4A]/50" />
+        <div className="relative max-w-4xl mx-auto">
           <nav className="mb-6">
             <Link href="/services" className="text-[#C9A84C] text-sm hover:underline">
               ← All services

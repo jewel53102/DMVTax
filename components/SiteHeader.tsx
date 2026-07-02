@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const services = [
@@ -34,12 +35,21 @@ export default function SiteHeader() {
       </div>
 
       <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="text-xl font-bold tracking-tight text-white">
-            DMV Tax Resolution
-          </span>
-          <span className="text-xs text-[#C9A84C] font-medium tracking-wide mt-0.5">
-            Maryland · DC · Virginia
+        <Link href="/" className="flex items-center gap-2.5">
+          <Image
+            src="/dmv-dome-white-1024.png"
+            alt=""
+            width={52}
+            height={52}
+            className="flex-shrink-0"
+          />
+          <span className="flex flex-col leading-none">
+            <span className="text-xl font-bold tracking-tight text-white">
+              DMV Tax Resolution
+            </span>
+            <span className="text-xs text-[#C9A84C] font-medium tracking-wide mt-0.5">
+              Maryland · DC · Virginia
+            </span>
           </span>
         </Link>
 

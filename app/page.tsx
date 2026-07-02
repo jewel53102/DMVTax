@@ -41,8 +41,16 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B2A4A] text-white py-20 px-4">
-        <div className="max-w-5xl mx-auto">
+      <section className="relative overflow-hidden bg-[#1B2A4A] text-white py-20 px-4">
+        <Image
+          src="/capitol01.png"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-75"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B2A4A] via-[#1B2A4A]/90 to-[#1B2A4A]/50" />
+        <div className="relative max-w-5xl mx-auto">
           <div className="inline-block bg-[#C9A84C]/20 text-[#C9A84C] text-sm font-semibold px-3 py-1.5 rounded-full mb-6 tracking-wide">
             Serving Maryland · DC · Virginia
           </div>

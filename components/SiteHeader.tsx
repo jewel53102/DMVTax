@@ -2,19 +2,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { services as allServices } from "@/lib/services";
 
-const services = [
-  { label: "Offer In Compromise", href: "/services/offer-in-compromise" },
-  { label: "Back Taxes Owed", href: "/services/back-taxes" },
-  { label: "Unfiled Tax Returns", href: "/services/unfiled-tax-returns" },
-  { label: "Installment Agreements", href: "/services/installment-agreements" },
-  { label: "Penalty Abatement", href: "/services/penalty-abatement" },
-  { label: "Wage Garnishment Relief", href: "/services/wage-garnishment" },
-  { label: "IRS Audit Representation", href: "/services/irs-audit-representation" },
-  { label: "Bank Levy Release", href: "/services/bank-levy" },
-  { label: "Payroll Tax Relief", href: "/services/payroll-tax-relief" },
-  { label: "Currently Not Collectible", href: "/services/currently-not-collectible" },
-];
+const services = allServices.map((s) => ({ label: s.shortTitle, href: `/services/${s.slug}` }));
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -74,6 +64,9 @@ export default function SiteHeader() {
               ))}
             </div>
           </div>
+          <Link href="/locations" className="text-gray-200 hover:text-white transition-colors">
+            Locations
+          </Link>
           <Link href="/about" className="text-gray-200 hover:text-white transition-colors">
             About
           </Link>
@@ -132,6 +125,9 @@ export default function SiteHeader() {
               ))}
             </div>
           )}
+          <Link href="/locations" className="block py-3 text-gray-200 font-medium border-t border-white/10" onClick={() => setMenuOpen(false)}>
+            Locations
+          </Link>
           <Link href="/about" className="block py-3 text-gray-200 font-medium border-t border-white/10" onClick={() => setMenuOpen(false)}>
             About
           </Link>

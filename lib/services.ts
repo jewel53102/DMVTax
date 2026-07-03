@@ -23,11 +23,13 @@ The IRS accepts OICs when there is doubt about collectibility, doubt about liabi
 **Why representation matters:** The OIC acceptance rate for self-filed applications is significantly lower than for professionally prepared ones. A weak application wastes your time, restarts collection timelines, and signals to the IRS that you don't have professional help. We evaluate your OIC eligibility before filing and only submit when the case is strong.
 
 **How we work with Maryland, DC, and Virginia clients:**
+
 - Maryland Comptroller OIC cases run separately from IRS cases — we handle both simultaneously
 - Virginia Department of Taxation has its own OIC program with different qualifying criteria
 - DC Office of Tax and Revenue OIC cases follow DC-specific rules we know well
 
 **The process:**
+
 1. Free consultation — we assess your eligibility based on your current financial picture
 2. Full financial analysis — we calculate your Reasonable Collection Potential (RCP), the number that determines your offer amount
 3. Application preparation — Forms 656 and 433-A/B with complete supporting documentation
@@ -68,6 +70,7 @@ The IRS accepts OICs when there is doubt about collectibility, doubt about liabi
 The earlier you act, the more options you have. If collection has already started, we work to stop it while we negotiate the underlying debt.
 
 **What "back taxes" typically means:**
+
 - Unpaid federal income tax from prior years
 - Unpaid Maryland state income tax (collected by the Maryland Comptroller)
 - Unpaid Virginia state income tax (Virginia Department of Taxation)
@@ -75,6 +78,7 @@ The earlier you act, the more options you have. If collection has already starte
 - Business taxes owed, including payroll taxes
 
 **Resolution options we evaluate for you:**
+
 - Offer in Compromise — settle for less than owed
 - Installment Agreement — structured payment plan
 - Currently Not Collectible status — temporary pause on collection if you can't pay
@@ -115,6 +119,7 @@ The earlier you act, the more options you have. If collection has already starte
 The practical consequences compound the legal ones. The IRS can file a Substitute for Return (SFR) on your behalf — but SFRs disallow every deduction you're entitled to, and the resulting bill is often dramatically higher than if you'd filed yourself. Once an SFR is filed, you still have options, but you've lost your chance to file the most favorable version of your return.
 
 **How we handle unfiled returns:**
+
 1. We determine how many years need to be filed. The IRS typically requires the last 6 years for compliance, but the specific requirement depends on your situation.
 2. We gather your income information. In many cases we can reconstruct records using IRS transcripts and third-party documentation.
 3. We file the returns in the most favorable way — claiming every deduction and credit you're entitled to.
@@ -227,6 +232,7 @@ Penalty abatement should typically be pursued before settling on an installment 
 The amount taken can be substantial. The IRS uses a formula based on your filing status and number of dependents — but it doesn't consider your actual living expenses. It's not uncommon for 40–70% of take-home pay to be seized, leaving employees unable to cover rent or basic expenses.
 
 **How we stop wage garnishment:**
+
 1. We file a Power of Attorney (Form 2848) immediately, which puts the IRS in contact with us instead of you
 2. We request a Collection Due Process (CDP) hearing or work directly with the IRS to establish an alternative resolution
 3. Once we have a resolution in place — installment agreement, OIC, or hardship status — the wage levy is released
@@ -265,11 +271,13 @@ Most garnishments can be stopped or significantly reduced within days of us fili
     body: `An IRS audit — whether a correspondence audit, office audit, or field audit — is an official proceeding. What you say and provide during an audit becomes part of the record. Taxpayers who represent themselves often over-share, mischaracterize expenses, or miss opportunities to challenge the IRS's position.
 
 **Types of audits:**
+
 - **Correspondence audit** — the most common type; conducted by mail, usually requesting documentation for specific line items
 - **Office audit** — you (or your representative) meet with an IRS examiner at a local IRS office
 - **Field audit** — an IRS agent visits your home or business, typically for more complex cases or businesses
 
 **As your representative, we:**
+
 - Review the audit notice and identify exactly what the IRS is examining
 - Gather and organize documentation to support your position
 - Communicate directly with the IRS — you don't attend unless necessary
@@ -346,12 +354,14 @@ A levy release alone doesn't resolve the underlying debt. If the levy is release
 **Trust Fund Recovery Penalty (TFRP):** The IRS can assess the Trust Fund Recovery Penalty against any person who was responsible for collecting and paying over payroll taxes and who willfully failed to do so. This means the penalty follows individuals personally — it doesn't disappear if the business closes. As an attorney, we can challenge TFRP assessments and represent you in collection proceedings.
 
 **How serious is payroll tax debt?**
+
 - The IRS prioritizes payroll tax collection over most other enforcement
 - Penalties and interest compound quickly on trust fund balances
 - Revenue Officers (field agents) are commonly assigned to payroll tax cases
 - Business assets and personal assets of responsible individuals are both at risk
 
 **Resolution options for payroll tax:**
+
 - Installment agreements for the business and/or individuals assessed the TFRP
 - Offer in Compromise for qualifying businesses
 - Penalty abatement for accrued penalties
@@ -387,6 +397,7 @@ CNC status is not a permanent resolution. The IRS reviews hardship cases annuall
 **The CSED strategy:** The IRS has 10 years from the date of assessment to collect a tax debt. If you can maintain CNC status (or another non-collecting resolution like an installment agreement) until the statute expires, the remaining balance is extinguished. This isn't a guaranteed outcome — it requires careful management — but it's a legitimate legal strategy that eliminates tax debt without payment.
 
 **How CNC is established:**
+
 - You provide a Collection Information Statement (Form 433-A or 433-F) documenting income, expenses, and assets
 - The IRS evaluates whether your income minus IRS allowable expenses leaves any ability to pay
 - If nothing is available, CNC status is granted
@@ -408,6 +419,172 @@ CNC status is not a permanent resolution. The IRS reviews hardship cases annuall
       {
         q: "What's the difference between CNC and an installment agreement?",
         a: "An installment agreement requires monthly payments. CNC requires no payments at all, but is only available when you truly can't afford any payment. Both halt collection.",
+      },
+    ],
+  },
+  {
+    slug: "tax-lien-release",
+    shortTitle: "Tax Lien Release",
+    title: "IRS Tax Lien Release & Withdrawal — Maryland, DC & Virginia",
+    tagline: "Get a federal or state tax lien released, withdrawn, or subordinated",
+    description:
+      "A federal tax lien attaches to everything you own and can block a home sale, refinance, or business loan. We work to get liens released, withdrawn, or subordinated so you can move forward.",
+    body: `A Notice of Federal Tax Lien is the IRS's legal claim against your property when you have unpaid tax debt. It's different from a levy — a lien doesn't take property, it secures the government's interest in it. But a filed lien is public record, appears on title searches, and can stop a home sale or refinance in its tracks.
+
+**Lien vs. levy:** A lien is a claim; a levy is a seizure. The IRS typically files a lien before it levies, as a way of securing its position. Resolving the underlying debt is usually what gets a lien released — but there are faster paths in specific situations.
+
+**Ways a lien can be resolved:**
+
+- **Release** — happens automatically once the tax debt is paid in full, or can be requested once a bond or other security is posted
+- **Withdrawal** — removes the public notice of the lien entirely, as if it was never filed; available in specific circumstances, including under Fresh Start Program criteria if you're in a Direct Debit Installment Agreement
+- **Subordination** — allows another creditor (like a mortgage lender) to move ahead of the IRS's claim, which can make refinancing possible even with the lien still in place
+- **Discharge** — removes the lien from a specific piece of property so it can be sold, while the lien remains attached to your other assets
+
+**Why timing matters:** If you're trying to sell or refinance property, the type of relief you need — release, subordination, or discharge — depends on your specific transaction and timeline. We identify the right mechanism early so it doesn't derail a closing.
+
+**State tax liens:** Maryland, Virginia, and DC can each file their own tax liens independent of the IRS. A Maryland Comptroller lien, a Virginia Department of Taxation lien, and a DC OTR lien all follow different release procedures. We handle federal and state liens together so nothing gets missed during a transaction.`,
+    faqs: [
+      {
+        q: "Will a tax lien show up on my credit report?",
+        a: "Tax liens were removed from the three major credit bureau reports starting in 2018, so they generally no longer appear on standard credit reports. However, the lien is still public record and will show up in title searches, background checks, and some lender due-diligence processes.",
+      },
+      {
+        q: "Can I sell my house if there's a lien on it?",
+        a: "Often yes, through a discharge that removes the lien from that specific property, typically paid out of sale proceeds at closing. We coordinate this with your title company and closing timeline.",
+      },
+      {
+        q: "How is a lien withdrawal different from a release?",
+        a: "A release ends the lien going forward but the fact that it existed remains part of the public record. A withdrawal removes the public notice as though it was never filed — a meaningfully stronger outcome, but only available in specific situations.",
+      },
+      {
+        q: "I need to refinance but have a federal tax lien. What are my options?",
+        a: "Subordination is usually the tool here — it lets your mortgage lender move ahead of the IRS's claim without removing the lien entirely. Lenders are familiar with this process; we handle the IRS side.",
+      },
+    ],
+  },
+  {
+    slug: "innocent-spouse-relief",
+    shortTitle: "Innocent Spouse Relief",
+    title: "Innocent Spouse Relief — Maryland, DC & Virginia",
+    tagline: "You shouldn't owe for a tax debt your spouse or ex-spouse created",
+    description:
+      "When you file a joint return, you're generally on the hook for the whole balance — even if your spouse or ex-spouse is the one who underreported income or claimed improper deductions. Innocent spouse relief can remove that liability.",
+    body: `Married couples who file jointly are jointly and severally liable for the resulting tax debt — meaning the IRS can pursue either spouse for the full amount, regardless of who earned the income or made the error. That can mean an enormous, unfair liability for a spouse who had no idea what was happening on the return, or who has since divorced or separated.
+
+**Three types of relief:**
+
+**Innocent Spouse Relief** applies when your spouse (or ex-spouse) understated tax owed due to erroneous items — unreported income or improperly claimed deductions/credits — and you didn't know and had no reason to know about the understatement when you signed the return.
+
+**Separation of Liability Relief** divides the understated tax between you and your spouse or ex-spouse based on what's actually attributable to each of you. This is available if you're divorced, legally separated, widowed, or have lived apart for the 12 months before filing the request.
+
+**Equitable Relief** may apply when you don't qualify for the other two types but it would be unfair to hold you liable — for example, if your spouse paid the tax that was reported as due but didn't actually pay it, or in certain hardship situations.
+
+**How to request relief:** You file Form 8857, Request for Innocent Spouse Relief, along with a detailed explanation of your situation. The IRS is required to notify your current or former spouse and give them a chance to participate in the process, which is often the part people find most stressful about filing.
+
+**Timing:** For innocent spouse and separation of liability relief, you generally need to request within two years of the IRS's first collection action against you. Equitable relief has different timing rules. Filing early protects your options.
+
+**State returns:** Maryland, Virginia, and DC each have their own joint-liability rules for state income tax. Innocent spouse relief on your federal return doesn't automatically extend to state liability — we address both together.`,
+    faqs: [
+      {
+        q: "My ex-spouse hid income from me and I signed a joint return. Am I stuck with the debt?",
+        a: "Not necessarily. If you didn't know and had no reason to know about the unreported income, you may qualify for innocent spouse relief on the resulting tax debt.",
+      },
+      {
+        q: "Will my ex-spouse find out I filed for innocent spouse relief?",
+        a: "Yes. The IRS is required to notify the other spouse or ex-spouse and give them an opportunity to respond. We prepare you for this and manage communication with the IRS throughout.",
+      },
+      {
+        q: "We're still married. Can I still request innocent spouse relief?",
+        a: "Yes, innocent spouse relief doesn't require divorce or separation. Separation of liability relief does have those requirements, but innocent spouse relief and equitable relief do not.",
+      },
+      {
+        q: "How long does the IRS take to decide?",
+        a: "It varies significantly based on complexity and current IRS processing times, but these requests often take six months or more. We keep the request moving and respond promptly to any IRS follow-up requests.",
+      },
+    ],
+  },
+  {
+    slug: "trust-fund-recovery-penalty",
+    shortTitle: "Trust Fund Recovery Penalty",
+    title: "Trust Fund Recovery Penalty Defense — MD, DC & VA",
+    tagline: "Don't let the IRS make you personally liable for your business's payroll tax debt",
+    description:
+      "The Trust Fund Recovery Penalty lets the IRS collect unpaid payroll taxes directly from individuals it determines were 'responsible' for paying them — personally, regardless of business structure. We challenge incorrect assessments and negotiate resolutions.",
+    body: `When a business withholds payroll taxes from employee wages but doesn't remit them to the IRS, the government treats that money as though it were held in trust for the employees — hence "trust fund" taxes. The Trust Fund Recovery Penalty (TFRP) allows the IRS to assess the unpaid trust fund portion directly against individuals personally, separate from any action against the business itself.
+
+**This is what makes TFRP so serious:** Corporate and LLC liability protections don't apply. The penalty follows the responsible individual even if the business closes, files bankruptcy, or the corporate entity has no assets left. It's calculated as 100% of the unpaid trust fund taxes (the employee withholding portion), not the employer's matching share.
+
+**Who counts as a "responsible person"?** The IRS looks at authority and duty, not job title. Someone can be assessed if they had the authority to decide which creditors got paid and either knew payroll taxes weren't being paid or recklessly disregarded a known risk that they weren't. This can include:
+- Officers and directors
+- Anyone with check-signing authority or control over payroll
+- Majority shareholders involved in financial decisions
+- In some cases, bookkeepers or controllers with significant financial authority
+
+**The IRS investigation process:** Revenue Officers conduct interviews (Form 4180) with anyone who might be a responsible person, then issue a proposed assessment. You have the right to appeal a proposed TFRP assessment before it becomes final — this is often the best opportunity to challenge an incorrect responsible-person determination.
+
+**Defending against TFRP:**
+
+- Challenging the responsible-person determination itself — many assessments are made against people who didn't actually have the authority the IRS assumes
+- Appealing within the administrative process before assessment becomes final
+- Negotiating an installment agreement or Offer in Compromise on the assessed penalty once it's final
+- In limited cases, challenging in court after paying a divisible portion of the assessment
+
+**Multiple responsible persons:** The IRS can assess TFRP against more than one person for the same unpaid taxes, though it can only collect the total amount once. If you're one of several people the IRS is investigating, how the case is handled affects your individual exposure.`,
+    faqs: [
+      {
+        q: "My business closed. Can the IRS still come after me personally?",
+        a: "Yes. Business closure limits IRS collection against the business, but the Trust Fund Recovery Penalty follows responsible individuals personally, regardless of whether the business still exists.",
+      },
+      {
+        q: "I'm just a bookkeeper — can I really be held responsible?",
+        a: "Job title alone doesn't determine responsibility. What matters is whether you had authority over financial decisions and knowledge of the unpaid taxes. We evaluate this carefully, since many bookkeepers are incorrectly assessed.",
+      },
+      {
+        q: "The IRS wants to interview me about payroll taxes. Should I go alone?",
+        a: "No. The Form 4180 interview is how the IRS builds its responsible-person case. What you say in that interview shapes the assessment. We prepare you or attend on your behalf.",
+      },
+      {
+        q: "Can TFRP be settled through an Offer in Compromise?",
+        a: "Yes, once the penalty is assessed, it can potentially be resolved through an OIC or installment agreement like other tax debt, based on your individual financial situation.",
+      },
+    ],
+  },
+  {
+    slug: "irs-fresh-start-program",
+    shortTitle: "IRS Fresh Start Program",
+    title: "IRS Fresh Start Program — Maryland, DC & Virginia",
+    tagline: "The umbrella of IRS initiatives that make resolving tax debt more accessible",
+    description:
+      "The IRS Fresh Start initiative expanded eligibility for Offers in Compromise, streamlined installment agreements, and lien relief. We help Maryland, DC, and Virginia taxpayers use it correctly — and cut through the marketing noise around it.",
+    body: `"IRS Fresh Start Program" is one of the most searched tax relief terms — and one of the most misunderstood. It isn't a single program you apply for. It's an umbrella term for a set of IRS policy changes, first introduced in 2011 and expanded since, that made several existing resolution options more accessible. Late-night ads often talk about it as though it's a special one-time deal; in reality, it's the current, ongoing framework the IRS uses for several standard programs.
+
+**What Fresh Start actually changed:**
+
+**Expanded Offer in Compromise eligibility.** The formula the IRS uses to calculate your Reasonable Collection Potential — the basis for your settlement amount — was adjusted to look at a shorter period of future income for lump-sum and short-term offers, and revised how home equity and other assets are counted.
+
+**Streamlined Installment Agreements.** Fresh Start raised the balance threshold for a streamlined agreement (no full financial disclosure required) up to $50,000, and extended the maximum repayment term. This lets many more taxpayers set up a payment plan without submitting a full Collection Information Statement.
+
+**Lien withdrawal criteria.** Fresh Start made it easier to get a Notice of Federal Tax Lien withdrawn after the debt is paid, and created a path to request withdrawal after entering a Direct Debit Installment Agreement, under specific conditions — even before the balance is fully paid.
+
+**Why this matters for how we approach your case:** Because Fresh Start isn't a separate application, "qualifying for Fresh Start" really means qualifying for one or more of the underlying programs — OIC, streamlined installment agreements, or lien withdrawal — under their current, expanded criteria. We evaluate your situation against all of them together rather than treating Fresh Start as a single yes/no determination.
+
+**Maryland, DC, and Virginia:** State tax authorities each have their own versions of expanded relief programs, separate from the federal Fresh Start framework. We evaluate federal and state options side by side so you get the full picture, not just the IRS piece.`,
+    faqs: [
+      {
+        q: "Is the IRS Fresh Start Program a real thing, or is it a scam?",
+        a: "It's real, but it's not a single program you sign up for — it's the current framework behind several standard IRS resolution options (OIC, streamlined installment agreements, lien withdrawal). Be skeptical of ads that describe it as a special limited-time deal; the underlying rules have been in place and updated periodically since 2011.",
+      },
+      {
+        q: "Do I need to specifically apply for Fresh Start?",
+        a: "No. You apply for the underlying resolution — an Offer in Compromise, an installment agreement, or a lien withdrawal request — and Fresh Start's expanded eligibility criteria apply automatically if you qualify.",
+      },
+      {
+        q: "Does Fresh Start reduce the amount of tax I owe?",
+        a: "Not by itself. It expands who qualifies for programs like OIC, which can reduce your total balance, but the reduction comes from the underlying program's evaluation of your finances — not from Fresh Start directly.",
+      },
+      {
+        q: "How do I know which Fresh Start option applies to my situation?",
+        a: "It depends on your balance, income, assets, and goals. We assess your full financial picture during a free consultation and identify which combination of options — OIC, installment agreement, lien relief — fits your case.",
       },
     ],
   },

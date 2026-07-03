@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { services } from "@/lib/services";
+import { locations } from "@/lib/locations";
 
 export default function SiteFooter() {
   return (
     <footer className="bg-[#1B2A4A] text-gray-300 mt-20">
-      <div className="max-w-6xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="max-w-6xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-5 gap-10">
         <div className="md:col-span-2">
           <div className="text-white font-bold text-lg mb-1">DMV Tax Resolution</div>
           <div className="text-[#C9A84C] text-xs font-medium mb-4 tracking-wide">Maryland · DC · Virginia</div>
@@ -25,20 +27,23 @@ export default function SiteFooter() {
         <div>
           <div className="text-white font-semibold text-sm mb-4">Services</div>
           <ul className="space-y-2 text-sm">
-            {[
-              ["Offer In Compromise", "/services/offer-in-compromise"],
-              ["Back Taxes Owed", "/services/back-taxes"],
-              ["Unfiled Tax Returns", "/services/unfiled-tax-returns"],
-              ["Wage Garnishment", "/services/wage-garnishment"],
-              ["IRS Audit Representation", "/services/irs-audit-representation"],
-              ["Penalty Abatement", "/services/penalty-abatement"],
-              ["Installment Agreements", "/services/installment-agreements"],
-              ["Bank Levy Release", "/services/bank-levy"],
-              ["Payroll Tax Relief", "/services/payroll-tax-relief"],
-            ].map(([label, href]) => (
-              <li key={href}>
-                <Link href={href} className="hover:text-white transition-colors">
-                  {label}
+            {services.map((svc) => (
+              <li key={svc.slug}>
+                <Link href={`/services/${svc.slug}`} className="hover:text-white transition-colors">
+                  {svc.shortTitle}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <div className="text-white font-semibold text-sm mb-4">Areas We Serve</div>
+          <ul className="space-y-2 text-sm">
+            {locations.map((loc) => (
+              <li key={loc.slug}>
+                <Link href={`/locations/${loc.slug}`} className="hover:text-white transition-colors">
+                  {loc.city}, {loc.stateAbbr}
                 </Link>
               </li>
             ))}

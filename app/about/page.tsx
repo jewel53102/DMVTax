@@ -37,8 +37,16 @@ export default function AboutPage() {
   return (
     <>
       <JsonLd data={personJsonLd} />
-      <section className="bg-[#1B2A4A] text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-10 items-center md:items-start">
+      <section className="relative overflow-hidden bg-[#1B2A4A] text-white py-16 px-4">
+        <Image
+          src="/capitol01.png"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-75"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B2A4A] via-[#1B2A4A]/90 to-[#1B2A4A]/50" />
+        <div className="relative max-w-4xl mx-auto flex flex-col md:flex-row gap-10 items-center md:items-start">
           <div className="flex-shrink-0">
             <Image
               src="/stephen-cromwell.png"

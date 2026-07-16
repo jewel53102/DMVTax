@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { trackEvent } from "@/lib/gtag";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -13,7 +14,26 @@ export default function ContactForm() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // Form action can be wired to Formspree, Resend, or any handler
+
+    const body = [
+      `Name: ${form.name}`,
+      `Phone: ${form.phone}`,
+      `Email: ${form.email}`,
+      `Situation: ${form.situation}`,
+      "",
+      form.message,
+    ].join("\n");
+
+    const mailto = `mailto:groves.ruby@gemini-lane.com?cc=scromwell@hcaacpa.com&subject=${encodeURIComponent(
+      `Consultation request — ${form.situation || "General"}`
+    )}&body=${encodeURIComponent(body)}`;
+
+    trackEvent("generate_lead", {
+      form_name: "contact_consultation_request",
+      situation: form.situation,
+    });
+
+    window.location.href = mailto;
     setSubmitted(true);
   }
 
